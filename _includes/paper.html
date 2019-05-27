@@ -43,7 +43,11 @@
     {% if include.paper.draft %}
     <a href="{{ include.paper.draft }}" class="label label-info">[draft]</a>
     {% endif %}
-    
+
+    {% if include.paper.thesis %}
+    <a href="{{ include.paper.thesis }}" class="label label-info">[thesis]</a>
+    {% endif %}
+
     {% if include.paper.arxiv %}
     <a href="{{ include.paper.arxiv }}" class="label label-info">[arXiv]</a>
     {% endif %}
