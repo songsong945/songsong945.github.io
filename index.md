@@ -4,7 +4,7 @@ author_profile: true
 title: About
 ---
 
-I am a PhD student at the Institute for Logic, Language, and Computation at the University of Amsterdam. I work on data-efficient machine translation through the induction of latent structure in translation data. My research is part of the European [GoURMET](http://gourmet-project.eu/) project. My thesis adviser is [dr. Wilker Ferreira Aziz](http://wilkeraziz.github.io/).
+I am a Master student at Wuhan University. I work on data-efficient machine translation through the induction of latent structure in translation data. My research is part of the European [GoURMET](http://gourmet-project.eu/) project. My thesis adviser is [dr. Wilker Ferreira Aziz](http://wilkeraziz.github.io/).
 
 You can find my CV [here](/assets/files/CV.pdf).
 
