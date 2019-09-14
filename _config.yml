@@ -1,7 +1,7 @@
-title: Bryan Eikema
+title: Songsong Mo (莫松松)
 # email: b.eikema@uva.nl
 # description: >- # this means to ignore newlines until "baseurl:"
-description: "PhD Student Natural Language Processing"
+description: "Master Student, Wuhan University"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: bryaneikema
@@ -10,9 +10,9 @@ locale: "en"
 
 # Author information (sidebar)
 author:
-    name: "Bryan Eikema"
+    name: "Songsong Mo"
     avatar: "/assets/images/bio-photo.jpg"
-    bio:  "PhD Student Natural Language Processing"
+    bio:  "Master Student, Wuhan University"
     # location: "University of Amsterdam"
     links:
         - label: "Twitter"
@@ -20,7 +20,7 @@ author:
           url: "https://twitter.com/bryaneikema"
         - label: "GitHub"
           icon: "fab fa-fw fa-github"
-          url: "https://github.com/roxot"
+          url: "https://github.com/songsong945"
         - label: "LinkedIn"
           icon: "fab fa-linkedin"
           url: "https://www.linkedin.com/in/bryan-eikema-b5a3b482/"
