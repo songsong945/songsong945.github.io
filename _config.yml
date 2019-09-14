@@ -1,4 +1,4 @@
-title: Songsong Mo (莫松松)
+title: Songsong Mo
 # email: b.eikema@uva.nl
 # description: >- # this means to ignore newlines until "baseurl:"
 description: "Master Student, Wuhan University"
@@ -10,7 +10,7 @@ locale: "en"
 
 # Author information (sidebar)
 author:
-    name: "Songsong Mo"
+    name: "Songsong Mo (莫松松)"
     avatar: "/assets/images/bio-photo.jpg"
     bio:  "Master Student, Wuhan University"
     # location: "University of Amsterdam"
