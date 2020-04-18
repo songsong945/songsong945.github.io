@@ -9,5 +9,5 @@ I am a second-year master student in the [Totem Database group](totemdb.whu.edu.
 You can find my CV [here](/assets/files/CV.pdf).
 
 ### News
-* We have one paper “Bus frequency optimization: When waiting time matters in user satisfaction” accepted by DASFAA 2020.[Paper](https://arxiv.org/abs/2004.07812).
+* We have one paper “Bus frequency optimization: When waiting time matters in user satisfaction” accepted by DASFAA 2020.  [Paper](https://arxiv.org/abs/2004.07812).
 * Our paper “Optimizing Impression Counts for Outdoor Advertising” got the Best Paper Award Runner Up in ACM SIGKDD 2019.
