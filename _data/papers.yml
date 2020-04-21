@@ -36,11 +36,11 @@
   authors: "Ping Zhang, Zhifeng Bao, Yudong Niu, Yipeng Zhang, Songsong Mo, Fei Geng, Zhiyong Peng"
   booktitle: "World Wide Web"
 -
-  layout: demo
+  layout: paper
   paper-type: inproceedings
   selected: y
   year: 2019
-  title: "ITAA: an intelligent trajectory-driven outdoor advertising deployment assistant"
+  title: "ITAA: an intelligent trajectory-driven outdoor advertising deployment assistant" (Short Paper)
   authors: "Yipeng Zhang, Zhifeng Bao, Songsong Mo, Yuchen Li, Yanghao Zhou"
   doc-url: https://dl.acm.org/doi/10.14778/3352063.3352067
   booktitle: "Proceedings of the VLDB Endowment"
