@@ -4,7 +4,7 @@ author_profile: true
 title: About
 ---
 
-I am a second-year master student in the [Totem Database group](totemdb.whu.edu.cn) of School of Computer Science, Wuhan University. My supervisor is Zhiyong Peng. 
+I am a second-year master student in the [Totem Database group](https://totemdb.whu.edu.cn/) of School of Computer Science, Wuhan University. My supervisor is Zhiyong Peng. 
 
 You can find my CV [here](/assets/files/CV.pdf).
 
