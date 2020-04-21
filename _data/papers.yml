@@ -5,6 +5,7 @@
   year: 2020
   title: "Bus Frequency Optimization: When Waiting Time Matters in User Satisfaction"
   authors: "Songsong Mo, Zhifeng Bao, Baihua Zheng, Zhiyong Peng"
+  doc-url: https://arxiv.org/pdf/2004.07812.pdf
   arxiv: https://arxiv.org/pdf/2004.07812.pdf
   booktitle: "Proceedings of the 25th International Conference on Database Systems for Advanced Applications"
 -
@@ -14,6 +15,7 @@
   year: 2019
   title: "Optimizing impression counts for outdoor advertising"
   authors: "Yipeng Zhang, Yuchen Li, Zhifeng Bao, Songsong Mo, Ping Zhang"
+  doc-url: https://dl.acm.org/doi/abs/10.1145/3292500.3330829
   booktitle: "Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining"
 -
   layout: paper
@@ -22,6 +24,7 @@
   year: 2019
   title: "A Learning Approach for Topic-Aware Influence Maximization"
   authors: "Shan Tian, Ping Zhang, Songsong Mo, Liwei Wang, Zhiyong Peng"
+  doc-url: https://link.springer.com/chapter/10.1007/978-3-030-26072-9_9
   booktitle: "Asia-Pacific Web (APWeb) and Web-Age Information Management (WAIM) Joint International Conference on Web and Big Data"
 -
   layout: paper
@@ -29,6 +32,7 @@
   selected: y
   year: 2019
   title: "Proactive rumor control in online networks"
+  doc-url: https://link.springer.com/article/10.1007/s11280-018-0623-9
   authors: "Ping Zhang, Zhifeng Bao, Yudong Niu, Yipeng Zhang, Songsong Mo, Fei Geng, Zhiyong Peng"
   booktitle: "World Wide Web"
 -
@@ -38,5 +42,6 @@
   year: 2019
   title: "ITAA: an intelligent trajectory-driven outdoor advertising deployment assistant"
   authors: "Yipeng Zhang, Zhifeng Bao, Songsong Mo, Yuchen Li, Yanghao Zhou"
+  doc-url: https://dl.acm.org/doi/10.14778/3352063.3352067
   booktitle: "Proceedings of the VLDB Endowment"
 -
