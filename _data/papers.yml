@@ -28,7 +28,7 @@
   booktitle: "Asia-Pacific Web (APWeb) and Web-Age Information Management (WAIM) Joint International Conference on Web and Big Data"
 -
   layout: paper
-  paper-type:
+  paper-type: article
   selected: y
   year: 2019
   title: "Proactive rumor control in online networks"
