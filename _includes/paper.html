@@ -18,13 +18,12 @@
           <i>{{ include.paper.booktitle }}</i>,
         {% if include.paper.pages %}pages {{ include.paper.pages }},{% endif %}
       {% when "article" %}
-        In
         {% if include.paper.journal-url %}
           <a href="{{ include.paper.journal-url }}">
             <span class="glyphicon glyphicon-globe"></span>
           </a>
         {% endif %}
-          <i>{{ include.paper.journal }}</i>,
+          {{ include.paper.journal }},
             {% if include.paper.volume %}{{ include.paper.volume }}{% endif %}{% if include.paper.number %}({{ include.paper.number }}){% endif %}
             {% if include.paper.article%}: Article {{ include.paper.article}},{% endif %}
             {% if include.paper.pages %}: pages {{ include.paper.pages }},{% endif %}
