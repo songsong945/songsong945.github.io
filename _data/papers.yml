@@ -1,6 +1,6 @@
 -
   layout: paper
-  paper-type: inproceedings
+  paper-type: pre-print
   selected: y
   year: 2020
   title: "Bus Frequency Optimization: When Waiting Time Matters in User Satisfaction"
@@ -34,7 +34,7 @@
   title: "Proactive rumor control in online networks"
   doc-url: https://link.springer.com/article/10.1007/s11280-018-0623-9
   authors: "Ping Zhang, Zhifeng Bao, Yudong Niu, Yipeng Zhang, Songsong Mo, Fei Geng, Zhiyong Peng"
-  booktitle: "World Wide Web"
+  article: "World Wide Web"
 -
   layout: paper
   paper-type: inproceedings
