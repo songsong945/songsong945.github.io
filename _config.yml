@@ -24,7 +24,6 @@ author:
         - label: "songsong945@whu.edu.cn"
           icon: "far fa-envelope"
           url: "mailto:songsong945@whu.edu.cn"
-     <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?d=eU_2Ual8pjcjydC6UU7FC0Tb-dW7Mf2wSId9FFmkVyE&cl=ffffff&w=a"></script>
 
 # Build settings
 markdown: kramdown
