@@ -5,7 +5,7 @@ title: Experiences
 ---
 
 **Huawei Noah Ark Lab, ShenZhen, China**<br/>
-_July 2020 - October 2020, Research Intern<br/>
+_July 2020 - October 2020, Research Intern_<br/>
 Design and implement hybrid programming algorithm for large scale production planning.
 
 **Royal Melbourne Institute of Technology University, Australia**<br/>
