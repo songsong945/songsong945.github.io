@@ -21,8 +21,7 @@ author:
         - label: "LinkedIn"
           icon: "fab fa-linkedin"
           url: "https://www.linkedin.com/in/%E6%9D%BE%E6%9D%BE-%E8%8E%AB-7a7a371a6/"
-        - label: "Google Scholar"
-          icon: "/assets/images/scholar.jpg"
+        - ![Google Scholar](/assets/images/scholar.jpg)
           url: "https://scholar.google.com/citations?user=-7wI7x8AAAAJ&hl=zh-CN"
         - label: "songsong945@whu.edu.cn"
           icon: "far fa-envelope"
