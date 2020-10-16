@@ -5,9 +5,18 @@
   year: 2020
   title: "Bus Frequency Optimization: When Waiting Time Matters in User Satisfaction"
   authors: "Songsong Mo, Zhifeng Bao, Baihua Zheng, Zhiyong Peng"
-  doc-url: https://arxiv.org/pdf/2004.07812.pdf
+  doc-url: https://link.springer.com/chapter/10.1007%2F978-3-030-59416-9_12
   arxiv: https://arxiv.org/pdf/2004.07812.pdf
   booktitle: "Proceedings of the 25th International Conference on Database Systems for Advanced Applications"
+-
+  layout: paper
+  paper-type: inproceedings
+  selected: y
+  year: 2020
+  title: "FASTS: a satisfaction-boosting bus scheduling assistant (Demo Paper)"
+  authors: "Songsong Mo, Zhifeng Bao, Baihua Zheng, Zhiyong Peng"
+  doc-url: http://www.vldb.org/pvldb/vol13/p2873-mo.pdf
+  booktitle: "Proceedings of the VLDB Endowment"
 -
   layout: paper
   paper-type: inproceedings
@@ -40,7 +49,7 @@
   paper-type: inproceedings
   selected: y
   year: 2019
-  title: "ITAA: an intelligent trajectory-driven outdoor advertising deployment assistant (Short Paper)"
+  title: "ITAA: an intelligent trajectory-driven outdoor advertising deployment assistant (Demo Paper)"
   authors: "Yipeng Zhang, Zhifeng Bao, Songsong Mo, Yuchen Li, Yanghao Zhou"
   doc-url: https://dl.acm.org/doi/10.14778/3352063.3352067
   booktitle: "Proceedings of the VLDB Endowment"
