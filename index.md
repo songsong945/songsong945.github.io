@@ -4,7 +4,7 @@ author_profile: true
 title: About
 ---
 
-I am a third-year master student in the [Totem Database group](https://totemdb.whu.edu.cn/) of the School of Computer Science, Wuhan University. My supervisor is Zhiyong Peng, and I was a visiting student at RMIT supervised by [Zhifeng Bao](https://baozhifeng.net/).
+I am a third-year master student in the [Totem Database group](http://totemdb.whu.edu.cn/) of the School of Computer Science, Wuhan University. My supervisor is Zhiyong Peng, and I was a visiting student at RMIT supervised by [Zhifeng Bao](https://baozhifeng.net/).
 
 You can find my CV [here](/assets/files/CV.pdf).
 
