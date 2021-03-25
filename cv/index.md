@@ -4,4 +4,4 @@ author_profile: true
 title: CV
 ---
 
-You can find my CV [here](/assets/files/CV_SongsongMo.pdf).
+You can find my CV [here](/assets/files/CV_MSS.pdf).
