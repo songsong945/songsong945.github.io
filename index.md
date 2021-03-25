@@ -6,7 +6,7 @@ title: About
 
 I am a third-year master student in the [Totem Database group](http://totemdb.whu.edu.cn/) of the School of Computer Science, Wuhan University. My supervisor is Zhiyong Peng, and I was a visiting student at RMIT supervised by [Zhifeng Bao](https://baozhifeng.net/).
 
-You can find my CV [here](/assets/files/CV.pdf).
+You can find my CV [here](/assets/files/CV_MSS.pdf).
 
 ### News
 * One paper “Towards an Optimal Bus Frequency Scheduling: When the Waiting Time Matters” is accepted by TKDE. *Oct. 2020.* [Early Access](https://www.computer.org/csdl/journal/tk/5555/01/09250547/1oxjSBFKLbq).
