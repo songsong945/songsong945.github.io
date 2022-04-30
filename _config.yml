@@ -12,7 +12,7 @@ locale: "en"
 author:
     name: "Songsong Mo (莫松松)"
     avatar: "/assets/images/bio-photo.jpg"
-    bio:  "Research Associate at Nanyang Technological University"
+    bio:  "Research Associate at NTU"
     location: "Singapore"
     links:
         - label: "GitHub"
