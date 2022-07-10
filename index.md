@@ -4,9 +4,9 @@ author_profile: true
 title: About
 ---
 
-I am a Research Associate at Nanyang Technological University supervised by [Gao Cong](https://personal.ntu.edu.sg/gaocong/). Before that, I obtained the Master's Degree, advised by [Zhiyong Peng](http://totemdb.whu.edu.cn/), and Bachelor's Degree at Wuhan University in 2018 and 2014, respectively. And I was a visiting student at RMIT supervised by [Zhifeng Bao](https://baozhifeng.net/).
+I am a Research Associate and a PhD student at Nanyang Technological University supervised by Prof. [Gao Cong](https://personal.ntu.edu.sg/gaocong/). Before that, I obtained the Master's Degree, advised by Prof. [Zhiyong Peng](http://totemdb.whu.edu.cn/), and Bachelor's Degree at Wuhan University in 2018 and 2014, respectively. And I was a visiting student at RMIT supervised by Prof. [Zhifeng Bao](https://baozhifeng.net/).
 
-You can find my CV [here](/assets/files/CV_MSS.pdf).
+You can find my CV [here](/assets/files/CV.pdf).
 
 ### News
 * One paper “Towards an Optimal Bus Frequency Scheduling: When the Waiting Time Matters” is accepted by TKDE. *Oct. 2020.* [Early Access](https://www.computer.org/csdl/journal/tk/5555/01/09250547/1oxjSBFKLbq).
