@@ -16,8 +16,8 @@ You can find my CV [here](/assets/files/CV.pdf).
 * Research Associate at Alibaba-NTU JRI, NTU, Singapore. *March 2022 - Present*.
 * Research Intern at Zhejiang Lab, China. *August 2021 - March 2022*.
 * Research Intern at Noah Ark Lab, Huawei, China. *July 2020 - October 2020*.
-* Visiting Student atRMIT University, Australia. *August 2019 - October 2019*.
-* Visiting Student atRMIT University, Australia. *December 2018 - March 2019*.
+* Visiting Student at RMIT University, Australia. *August 2019 - October 2019*.
+* Visiting Student at RMIT University, Australia. *December 2018 - March 2019*.
 
 ### Selected Publications
 * **Mo, S.**, Bao, Z., Zhang, P., Peng, Z.. Towards an efficient cost-aware random walk domination, Proceedings of the VLDB Endowment, 2021.
