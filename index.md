@@ -9,8 +9,8 @@ I am a Research Associate and a PhD student at Nanyang Technological University 
 You can find my CV [here](/assets/files/CV.pdf).
 
 ### News
-* **August 2022** Starting my Ph.D. journey at NTU.
-* **March 2022** Joining Alibaba-NTU JRI, NTU, Singapore as Research Associate. 
+* **August 2022:** Starting my Ph.D. journey at NTU.
+* **March 2022:** Joining Alibaba-NTU JRI, NTU, Singapore as Research Associate. 
 
 ### Experiences
 * Research Associate at Alibaba-NTU JRI, NTU, Singapore. *March 2022 - Present*.
