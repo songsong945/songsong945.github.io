@@ -9,6 +9,17 @@ I am a Research Associate and a PhD student at Nanyang Technological University 
 You can find my CV [here](/assets/files/CV.pdf).
 
 ### News
-* One paper “Towards an Optimal Bus Frequency Scheduling: When the Waiting Time Matters” is accepted by TKDE. *Oct. 2020.* [Early Access](https://www.computer.org/csdl/journal/tk/5555/01/09250547/1oxjSBFKLbq).
-* Our demo paper “FASTS: A satisfaction-boosting bus scheduling assistant” is accepted by VLDB 2020. *Jun. 2020.* [Paper](https://dl.acm.org/doi/abs/10.14778/3415478.3415497).
-* We have one paper “Bus frequency optimization: When waiting time matters in user satisfaction” accepted by DASFAA 2020. *Feb. 2020.* [Paper](https://link.springer.com/chapter/10.1007%2F978-3-030-59416-9_12).
+* **August 2022** Starting my Ph.D. journey at NTU.
+* **March 2022** Joining Alibaba-NTU JRI, NTU, Singapore as Research Associate. 
+
+### Experiences
+* Research Associate at Alibaba-NTU JRI, NTU, Singapore. *March 2022 - Present*.
+* Research Intern at Zhejiang Lab, China. *August 2021 - March 2022*.
+* Research Intern at Noah Ark Lab, Huawei, China. *July 2020 - October 2020*.
+* Visiting Student atRMIT University, Australia. *August 2019 - October 2019*.
+* Visiting Student atRMIT University, Australia. *December 2018 - March 2019*.
+
+### Selected Publications
+* **Mo, S.**, Bao, Z., Zhang, P., Peng, Z.. Towards an efficient cost-aware random walk domination, Proceedings of the VLDB Endowment, 2021.
+* **Mo, S.**, Bao, Z., Zheng, B., Peng,  Z., Towards an Optimal Bus Frequency Scheduling: When the Waiting Time Matters, Transactions on Knowledge and Data Engineering, 2020.
+* Zhang, Y., Li, Y., Bao, Z., **Mo, S.**, Zhang, P., Optimizing impression counts for outdoor advertising, Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, 2019.
