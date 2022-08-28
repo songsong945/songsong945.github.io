@@ -1,7 +1,3 @@
 main:
-  - title: "About"
+  - title: ""
     url: /
-  - title: "Publications"
-    url: /papers/
-  - title: "Experiences"
-    url: /experiences/
