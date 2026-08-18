@@ -73,8 +73,6 @@
 
           <h2 id="news-title" class="biography-news-title">Recent news</h2>
           <div class="news-list">
-            <div class="news-item"><time datetime="2026-06">Jun 2026</time><p>Joined NTU's College of Computing and Data Science as a Research Fellow.</p></div>
-            <div class="news-item"><time datetime="2026-03">Mar 2026</time><p>Received my PhD in Computer Science from Nanyang Technological University.</p></div>
             <div class="news-item"><time datetime="2026">2026</time><p>ARCADE appeared at IEEE ICDE 2026.</p></div>
             <div class="news-item"><time datetime="2026">2026</time><p><em>ScalePQO</em> and <em>TATA</em> appeared in PVLDB.</p></div>
             <div class="news-item"><time datetime="2025">2025</time><p><em>RankPQO</em> appeared in PVLDB.</p></div>
@@ -84,44 +82,47 @@
 
       <section class="section shell" aria-labelledby="projects-title">
         <div class="section-heading">
-          <h2 id="projects-title">Selected systems and projects</h2>
+          <h2 id="projects-title">Research projects</h2>
         </div>
 
         <div class="project-list">
           <article class="project-row">
             <div class="project-meta">
-              <p class="project-kicker">Current research</p>
-              <h3>Semantic Query Processing</h3>
+              <h3><a href="/research/#semantic-query-processing">Semantic Query Processing</a></h3>
             </div>
             <div class="project-body">
-              <p>I am developing execution and optimisation methods for workloads that place model-backed semantic operators in the same plans as conventional relational operators. The work studies database-kernel execution and plan selection when model evaluation is expensive and latency, resource use, and result quality all matter.</p>
-              <p class="project-note">Ongoing research; further details will be added as results become public.</p>
+              <p>Execution and optimisation for queries that combine relational operators with model-backed semantic operators, balancing latency, resource use, and result quality.</p>
             </div>
           </article>
 
           <article class="project-row">
             <div class="project-meta">
-              <p class="project-kicker">Open-source system · ICDE 2026</p>
-              <h3>ARCADE</h3>
+              <h3><a href="/research/#multimodal-data-systems">Heterogeneous and Multimodal Data Systems</a></h3>
             </div>
             <div class="project-body">
-              <p>ARCADE is a real-time data system for hybrid and continuous queries over vector, spatial, text, image, and relational data, built on RocksDB and MySQL. I led the design and implementation of its query-optimisation component and contributed to end-to-end system integration.</p>
-              <p class="resource-links"><a href="https://arxiv.org/abs/2509.19757">Paper</a><a href="https://github.com/Jamesyang2333/ARCADE">Code</a></p>
+              <p>Storage, indexing, and real-time query processing across vector, spatial, text, image, and relational data, represented by the open-source ARCADE system.</p>
             </div>
           </article>
 
           <article class="project-row">
             <div class="project-meta">
-              <p class="project-kicker">SIGMOD · PVLDB · Industry collaboration</p>
-              <h3>AI for Database Optimisation</h3>
+              <h3><a href="/research/#ai-for-database-optimisation">AI for Database Optimisation</a></h3>
             </div>
             <div class="project-body">
-              <p>This programme examines how learning can replace selected optimisation logic, enhance an existing optimiser, and transfer optimisation knowledge across tasks. I implemented PostgreSQL prototypes that resulted in <em>lemo</em>, <em>RankPQO</em>, and <em>TATA</em>.</p>
-              <p>In an NTU collaboration with OceanBase, an enterprise-grade distributed database originating from Ant Group, I led the day-to-day technical work on parametric query optimisation. The resulting <em>ScalePQO</em> work was integrated into OceanBase and reported in a PVLDB industry paper.</p>
-              <p class="resource-links"><a href="https://doi.org/10.1145/3626734">lemo</a><a href="https://www.vldb.org/pvldb/vol18/p863-mo.pdf">RankPQO</a><a href="https://www.vldb.org/pvldb/vol19/p413-zhao.pdf">TATA</a></p>
+              <p>Learning-enhanced optimisation for concurrent and parametric workloads, developed in PostgreSQL and extended to industrial-scale evaluation and integration in OceanBase.</p>
+            </div>
+          </article>
+
+          <article class="project-row">
+            <div class="project-meta">
+              <h3><a href="/research/#algorithms-for-data-intensive-applications">Algorithms for Data-Intensive Applications</a></h3>
+            </div>
+            <div class="project-body">
+              <p>Algorithms for graph analytics and urban data applications, including random-walk domination, public-transport scheduling, and trajectory-based advertising.</p>
             </div>
           </article>
         </div>
+        <p class="section-link"><a href="/research/">Read more about my research <span aria-hidden="true">→</span></a></p>
       </section>
 
       <section class="section shell" aria-labelledby="selected-publications-title">
