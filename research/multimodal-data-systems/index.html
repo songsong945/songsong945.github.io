@@ -15,7 +15,7 @@
     <meta name="twitter:image" content="https://songsongmo.cn/assets/images/og-home.png">
     <meta name="theme-color" content="#f8f7f3">
     <link rel="icon" type="image/png" href="/assets/images/favicon.png?v=20260818-db2">
-    <link rel="stylesheet" href="/assets/css/site.css?v=20260818-research1">
+    <link rel="stylesheet" href="/assets/css/site.css?v=20260819-architecture1">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -48,14 +48,154 @@
             <p><strong>ARCADE</strong> is an open-source RocksDB/MySQL system for real-time hybrid and continuous queries over relational, vector, spatial, text, and image data. It brings multimodal indexing, cost-based optimisation, and incremental query processing into one implemented system.</p>
           </header>
 
-          <figure class="system-diagram">
-            <div class="system-diagram-grid">
-              <div class="system-layer system-layer-wide"><strong>SQL interface</strong><span>Hybrid search, hybrid nearest-neighbour, and continuous queries</span></div>
-              <div class="system-layer"><strong>Cost-based query optimisation</strong><span>Statistics, access paths, and plan selection across data modalities</span></div>
-              <div class="system-layer"><strong>Incremental query processing</strong><span>Materialised views for continuously maintained results</span></div>
-              <div class="system-layer system-layer-wide"><strong>MySQL and RocksDB</strong><span>Relational storage with disk-based vector, spatial, and text indexes</span></div>
+          <figure class="arcade-architecture">
+            <div class="arcade-architecture-scroll">
+              <svg class="arcade-architecture-svg" viewBox="0 0 1180 620" role="img" aria-labelledby="arcade-architecture-title arcade-architecture-description">
+                <title id="arcade-architecture-title">ARCADE system architecture</title>
+                <desc id="arcade-architecture-description">The query interface communicates with a query processing layer containing a write thread and read threads for hybrid and continuous queries. The processing layer communicates with an LSM-tree data store and an incremental materialised view. The LSM-tree contains an in-memory write buffer, block cache and global secondary index, together with per-SST unified secondary indexes and data on disk.</desc>
+                <defs>
+                  <marker id="architecture-arrow" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto" markerUnits="strokeWidth">
+                    <path d="M 0 0 L 8 4 L 0 8 z"></path>
+                  </marker>
+                  <marker id="architecture-arrow-start" markerWidth="8" markerHeight="8" refX="1.5" refY="4" orient="auto" markerUnits="strokeWidth">
+                    <path d="M 8 0 L 0 4 L 8 8 z"></path>
+                  </marker>
+                </defs>
+
+                <g class="architecture-box architecture-layer">
+                  <rect x="20" y="18" width="535" height="62" rx="12"></rect>
+                  <text x="287.5" y="49" text-anchor="middle">Query interface layer</text>
+                </g>
+                <path class="architecture-arrow architecture-arrow-both" d="M 287.5 82 L 287.5 111"></path>
+
+                <g class="architecture-box architecture-layer">
+                  <rect x="20" y="112" width="535" height="205" rx="24"></rect>
+                  <text class="architecture-layer-title" x="42" y="139">Query processing layer</text>
+                </g>
+                <g class="architecture-box architecture-node-fill">
+                  <rect x="42" y="153" width="132" height="130" rx="18"></rect>
+                  <text x="108" y="213" text-anchor="middle">
+                    <tspan x="108" dy="0">Write</tspan>
+                    <tspan x="108" dy="25">thread</tspan>
+                  </text>
+                </g>
+                <g class="architecture-box architecture-node-group">
+                  <rect x="198" y="144" width="335" height="149" rx="18"></rect>
+                  <text class="architecture-group-title" x="365.5" y="169" text-anchor="middle">Read threads</text>
+                  <rect x="216" y="183" width="140" height="88" rx="13"></rect>
+                  <rect x="374" y="183" width="140" height="88" rx="13"></rect>
+                  <text x="286" y="217" text-anchor="middle">
+                    <tspan x="286" dy="0">Hybrid query</tspan>
+                    <tspan x="286" dy="22">processing</tspan>
+                  </text>
+                  <text x="444" y="207" text-anchor="middle">
+                    <tspan x="444" dy="0">Continuous</tspan>
+                    <tspan x="444" dy="22">query</tspan>
+                    <tspan x="444" dy="22">processing</tspan>
+                  </text>
+                </g>
+
+                <g class="architecture-box architecture-layer">
+                  <rect x="20" y="360" width="535" height="205" rx="24"></rect>
+                  <text class="architecture-layer-title" x="42" y="388">Storage layer</text>
+                </g>
+                <g class="architecture-box architecture-storage-node">
+                  <rect x="77" y="421" width="190" height="94" rx="18"></rect>
+                  <text x="172" y="458" text-anchor="middle">
+                    <tspan x="172" dy="0">LSM-tree</tspan>
+                    <tspan x="172" dy="24">data store</tspan>
+                  </text>
+                </g>
+                <g class="architecture-box architecture-view-node">
+                  <rect x="330" y="421" width="190" height="94" rx="18"></rect>
+                  <text x="425" y="447" text-anchor="middle">
+                    <tspan x="425" dy="0">Incremental</tspan>
+                    <tspan x="425" dy="23">materialised</tspan>
+                    <tspan x="425" dy="23">view</tspan>
+                  </text>
+                </g>
+
+                <path class="architecture-arrow" d="M 108 284 L 108 359"></path>
+                <path class="architecture-arrow" d="M 286 359 L 286 294"></path>
+                <path class="architecture-arrow architecture-arrow-both" d="M 444 294 L 444 420"></path>
+                <path class="architecture-expansion" d="M 556 468 L 606 468"></path>
+
+                <g class="architecture-box architecture-detail-frame">
+                  <rect x="608" y="48" width="552" height="520" rx="24"></rect>
+                  <text class="architecture-detail-heading" x="632" y="77">LSM-tree organisation</text>
+                  <line x1="608" y1="236" x2="1160" y2="236"></line>
+                  <text class="architecture-tier-label" x="632" y="109">Memory</text>
+                  <text class="architecture-tier-label" x="632" y="266">Disk</text>
+                </g>
+
+                <g class="architecture-box architecture-node-fill">
+                  <rect x="684" y="126" width="104" height="77" rx="13"></rect>
+                  <text x="736" y="155" text-anchor="middle">
+                    <tspan x="736" dy="0">Write</tspan>
+                    <tspan x="736" dy="22">buffer</tspan>
+                  </text>
+                  <rect x="806" y="126" width="104" height="77" rx="13"></rect>
+                  <text x="858" y="155" text-anchor="middle">
+                    <tspan x="858" dy="0">Block</tspan>
+                    <tspan x="858" dy="22">cache</tspan>
+                  </text>
+                </g>
+                <g class="architecture-box architecture-index-node">
+                  <rect x="928" y="116" width="204" height="97" rx="15"></rect>
+                  <text x="1030" y="145" text-anchor="middle">
+                    <tspan x="1030" dy="0">Global secondary</tspan>
+                    <tspan x="1030" dy="22">index</tspan>
+                  </text>
+                  <circle cx="1030" cy="185" r="6"></circle>
+                  <circle cx="973" cy="198" r="5"></circle>
+                  <circle cx="1030" cy="198" r="5"></circle>
+                  <circle cx="1087" cy="198" r="5"></circle>
+                  <path d="M 1030 185 L 973 198 M 1030 185 L 1030 198 M 1030 185 L 1087 198"></path>
+                </g>
+
+                <g class="architecture-box architecture-sst-node">
+                  <rect x="674" y="303" width="132" height="102" rx="10"></rect>
+                  <text class="architecture-sst-level" x="688" y="292">L0</text>
+                  <text x="740" y="330" text-anchor="middle">
+                    <tspan x="740" dy="0">Unified secondary</tspan>
+                    <tspan x="740" dy="19">index</tspan>
+                  </text>
+                  <line x1="674" y1="361" x2="806" y2="361"></line>
+                  <text x="740" y="386" text-anchor="middle">Data</text>
+
+                  <rect x="674" y="443" width="132" height="102" rx="10"></rect>
+                  <text class="architecture-sst-level" x="688" y="432">L1</text>
+                  <text x="740" y="470" text-anchor="middle">
+                    <tspan x="740" dy="0">Unified secondary</tspan>
+                    <tspan x="740" dy="19">index</tspan>
+                  </text>
+                  <line x1="674" y1="501" x2="806" y2="501"></line>
+                  <text x="740" y="526" text-anchor="middle">Data</text>
+
+                  <rect x="834" y="443" width="132" height="102" rx="10"></rect>
+                  <text x="900" y="470" text-anchor="middle">
+                    <tspan x="900" dy="0">Unified secondary</tspan>
+                    <tspan x="900" dy="19">index</tspan>
+                  </text>
+                  <line x1="834" y1="501" x2="966" y2="501"></line>
+                  <text x="900" y="526" text-anchor="middle">Data</text>
+
+                  <rect x="994" y="443" width="132" height="102" rx="10"></rect>
+                  <text x="1060" y="470" text-anchor="middle">
+                    <tspan x="1060" dy="0">Unified secondary</tspan>
+                    <tspan x="1060" dy="19">index</tspan>
+                  </text>
+                  <line x1="994" y1="501" x2="1126" y2="501"></line>
+                  <text x="1060" y="526" text-anchor="middle">Data</text>
+                  <text class="architecture-multiplicity" x="1140" y="500">× n</text>
+                </g>
+
+                <path class="architecture-index-link" d="M 973 204 L 973 284 L 740 284 L 740 302"></path>
+                <path class="architecture-index-link" d="M 1030 204 L 1030 420 L 900 420 L 900 442"></path>
+                <path class="architecture-index-link" d="M 1087 204 L 1087 420 L 1060 420 L 1060 442"></path>
+              </svg>
             </div>
-            <figcaption>A simplified functional view of ARCADE; see the ICDE paper for the complete system architecture.</figcaption>
+            <figcaption>System architecture, redrawn from Figure 1 of the <a href="https://doi.org/10.1109/ICDE65706.2026.00255">ARCADE paper</a>. MySQL provides the query engine and RocksDB the storage engine.</figcaption>
           </figure>
 
           <article class="detail-project">
