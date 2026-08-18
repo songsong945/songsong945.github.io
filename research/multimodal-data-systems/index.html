@@ -15,7 +15,7 @@
     <meta name="twitter:image" content="https://songsongmo.cn/assets/images/og-home.png">
     <meta name="theme-color" content="#f8f7f3">
     <link rel="icon" type="image/png" href="/assets/images/favicon.png?v=20260818-db2">
-    <link rel="stylesheet" href="/assets/css/site.css?v=20260819-architecture1">
+    <link rel="stylesheet" href="/assets/css/site.css?v=20260819-architecture2">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -211,21 +211,20 @@
           <article class="detail-project">
             <div class="detail-project-heading">
               <p class="project-kicker">Query processing</p>
-              <h2>Hybrid query optimisation</h2>
+              <h2>Query processing and optimisation</h2>
             </div>
             <div class="detail-project-copy">
-              <p>The cost-based optimiser combines multiple access paths for hybrid search and hybrid nearest-neighbour queries, including vector, spatial, text, and relational operators. It connects system statistics and heterogeneous indexes with MySQL plan selection.</p>
-              <p class="role">As co-first author, I led the design and implementation of the query-optimisation component. I contributed to technical discussions across the broader system; other team members held primary ownership of storage, indexing, and continuous-query processing.</p>
-            </div>
-          </article>
-
-          <article class="detail-project">
-            <div class="detail-project-heading">
-              <p class="project-kicker">Continuous workloads</p>
-              <h2>Incremental query processing</h2>
-            </div>
-            <div class="detail-project-copy">
-              <p>ARCADE supports time-based and event-driven continuous queries through incremental materialised views. Intermediate results are reused as data changes, allowing the system to maintain fresh answers without repeatedly executing each query from scratch.</p>
+              <ul class="detail-points">
+                <li>
+                  <h3>Hybrid queries</h3>
+                  <p>The cost-based optimiser combines multiple access paths for hybrid search and hybrid nearest-neighbour queries, including vector, spatial, text, and relational operators. It connects system statistics and heterogeneous indexes with MySQL plan selection.</p>
+                </li>
+                <li>
+                  <h3>Continuous queries</h3>
+                  <p>ARCADE supports time-based and event-driven continuous queries through incremental materialised views. Intermediate results are reused as data changes, allowing the system to maintain fresh answers without repeatedly executing each query from scratch.</p>
+                </li>
+              </ul>
+              <p class="role">As co-first author, I led the design and implementation of ARCADE's hybrid-query optimiser and its incremental processing for continuous queries. I contributed to technical discussions across the broader system; other team members held primary ownership of storage and indexing.</p>
             </div>
           </article>
 

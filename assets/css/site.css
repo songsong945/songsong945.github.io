@@ -615,6 +615,47 @@ h3 {
   margin-bottom: 0;
 }
 
+.detail-points {
+  margin: 0 0 1.6rem;
+  padding: 0;
+  list-style: none;
+}
+
+.detail-points li {
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.detail-points li::before {
+  content: "";
+  position: absolute;
+  top: 0.65rem;
+  left: 0;
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.detail-points li + li {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.detail-points li + li::before {
+  top: 2.15rem;
+}
+
+.detail-points h3 {
+  margin-bottom: 0.45rem;
+  font-size: 1.12rem;
+}
+
+.detail-points p {
+  margin-bottom: 0;
+}
+
 .detail-project-copy .role {
   padding-left: 1rem;
   border-left: 3px solid var(--accent);
