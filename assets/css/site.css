@@ -350,6 +350,10 @@ h3 {
   text-decoration: none;
 }
 
+.resource-links a[href^="/"]::after {
+  content: "→";
+}
+
 .publication {
   display: grid;
   grid-template-columns: 96px minmax(0, 1fr);
@@ -513,6 +517,176 @@ h3 {
   font-size: 0.92rem;
 }
 
+.research-heading-link {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.research-heading-link::after {
+  margin-left: 0.4rem;
+  color: var(--accent);
+  content: "→";
+}
+
+.research-heading-link:hover {
+  color: var(--accent);
+}
+
+.research-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(170px, 210px) minmax(0, 1fr);
+  gap: clamp(3rem, 7vw, 6rem);
+  align-items: start;
+  padding-block: clamp(3.75rem, 7vw, 5.5rem);
+}
+
+.research-direction-nav {
+  position: sticky;
+  top: 2rem;
+}
+
+.direction-nav-label {
+  margin-bottom: 0.85rem;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.research-direction-nav a {
+  display: block;
+  padding-block: 0.6rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+  text-decoration: none;
+}
+
+.research-direction-nav a:hover,
+.research-direction-nav a[aria-current="page"] {
+  color: var(--accent-dark);
+}
+
+.research-direction-nav a[aria-current="page"] {
+  font-weight: 700;
+}
+
+.research-detail-main {
+  min-width: 0;
+}
+
+.detail-hero {
+  max-width: 780px;
+  padding-bottom: clamp(3rem, 6vw, 4.5rem);
+}
+
+.detail-hero h1 {
+  margin-bottom: 0.55em;
+}
+
+.detail-hero p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.detail-project {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.8fr) minmax(0, 1.8fr);
+  gap: clamp(2rem, 6vw, 4.5rem);
+  padding-block: clamp(2.75rem, 5vw, 4rem);
+  border-top: 1px solid var(--line);
+}
+
+.detail-project:last-of-type {
+  border-bottom: 1px solid var(--line);
+}
+
+.detail-project-heading h2 {
+  font-size: clamp(1.5rem, 2.7vw, 1.85rem);
+}
+
+.detail-project-copy {
+  max-width: 72ch;
+}
+
+.detail-project-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.detail-project-copy .role {
+  padding-left: 1rem;
+  border-left: 3px solid var(--accent);
+  color: var(--accent-dark);
+}
+
+.detail-project-copy .result {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.detail-summary {
+  margin-top: clamp(2.75rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  border-left: 3px solid var(--accent);
+  background: var(--accent-soft);
+}
+
+.detail-summary h2 {
+  margin-bottom: 0.8rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.detail-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.system-diagram {
+  margin: 0 0 clamp(3rem, 6vw, 4.5rem);
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.system-diagram-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.system-layer {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.system-layer-wide {
+  grid-column: 1 / -1;
+}
+
+.system-layer strong,
+.system-layer span {
+  display: block;
+}
+
+.system-layer strong {
+  margin-bottom: 0.2rem;
+  color: var(--ink);
+}
+
+.system-layer span {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.system-diagram figcaption {
+  margin-top: 0.85rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 .year-heading {
   margin: 3.8rem 0 1.2rem;
   color: var(--accent);
@@ -582,9 +756,34 @@ h3 {
   }
 
   .project-row,
-  .research-block {
+  .research-block,
+  .detail-project {
     grid-template-columns: 1fr;
     gap: 1.35rem;
+  }
+
+  .research-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .research-direction-nav {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .direction-nav-label {
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  .research-direction-nav a {
+    padding-block: 0.35rem;
+    border-bottom: 0;
   }
 }
 
@@ -649,6 +848,14 @@ h3 {
   .news-item {
     grid-template-columns: 1fr;
     gap: 0.55rem;
+  }
+
+  .system-diagram-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .system-layer-wide {
+    grid-column: auto;
   }
 
   .publication-year {

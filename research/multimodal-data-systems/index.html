@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Heterogeneous and Multimodal Data Systems | Songsong Mo</title>
+    <meta name="description" content="ARCADE, an open-source system for real-time hybrid and continuous queries over relational, vector, spatial, text, and image data.">
+    <link rel="canonical" href="https://songsongmo.cn/research/multimodal-data-systems/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Heterogeneous and Multimodal Data Systems | Songsong Mo">
+    <meta property="og:description" content="ARCADE: real-time hybrid and continuous query processing across diverse data modalities.">
+    <meta property="og:url" content="https://songsongmo.cn/research/multimodal-data-systems/">
+    <meta property="og:image" content="https://songsongmo.cn/assets/images/og-home.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://songsongmo.cn/assets/images/og-home.png">
+    <meta name="theme-color" content="#f8f7f3">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png?v=20260818-db2">
+    <link rel="stylesheet" href="/assets/css/site.css?v=20260818-research1">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="site-name" href="/">Songsong Mo</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="/">Home</a>
+          <a href="/research/" aria-current="page">Research</a>
+          <a href="/publications/">Publications</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <div class="research-detail-layout shell">
+        <nav class="research-direction-nav" aria-label="Research directions">
+          <p class="direction-nav-label">Research</p>
+          <a href="/research/">Overview</a>
+          <a href="/research/#semantic-query-processing">Semantic Query Processing</a>
+          <a href="/research/multimodal-data-systems/" aria-current="page">Heterogeneous and Multimodal Data Systems</a>
+          <a href="/research/ai-for-database-optimisation/">AI for Database Optimisation</a>
+          <a href="/research/#algorithms-for-data-intensive-applications">Algorithms for Data-Intensive Applications</a>
+        </nav>
+
+        <div class="research-detail-main">
+          <header class="detail-hero">
+            <p class="project-kicker">Research direction</p>
+            <h1>Heterogeneous and Multimodal Data Systems</h1>
+            <p><strong>ARCADE</strong> is an open-source RocksDB/MySQL system for real-time hybrid and continuous queries over relational, vector, spatial, text, and image data. It brings multimodal indexing, cost-based optimisation, and incremental query processing into one implemented system.</p>
+          </header>
+
+          <figure class="system-diagram">
+            <div class="system-diagram-grid">
+              <div class="system-layer system-layer-wide"><strong>SQL interface</strong><span>Hybrid search, hybrid nearest-neighbour, and continuous queries</span></div>
+              <div class="system-layer"><strong>Cost-based query optimisation</strong><span>Statistics, access paths, and plan selection across data modalities</span></div>
+              <div class="system-layer"><strong>Incremental query processing</strong><span>Materialised views for continuously maintained results</span></div>
+              <div class="system-layer system-layer-wide"><strong>MySQL and RocksDB</strong><span>Relational storage with disk-based vector, spatial, and text indexes</span></div>
+            </div>
+            <figcaption>A simplified functional view of ARCADE; see the ICDE paper for the complete system architecture.</figcaption>
+          </figure>
+
+          <article class="detail-project">
+            <div class="detail-project-heading">
+              <p class="project-kicker">Storage and indexing</p>
+              <h2>Unified multimodal indexing</h2>
+            </div>
+            <div class="detail-project-copy">
+              <p>ARCADE integrates disk-based secondary indexes for vector, spatial, and text data with LSM-tree storage. This allows relational filters and specialised similarity or spatial predicates to operate over the same stored data rather than through separate systems.</p>
+            </div>
+          </article>
+
+          <article class="detail-project">
+            <div class="detail-project-heading">
+              <p class="project-kicker">Query processing</p>
+              <h2>Hybrid query optimisation</h2>
+            </div>
+            <div class="detail-project-copy">
+              <p>The cost-based optimiser combines multiple access paths for hybrid search and hybrid nearest-neighbour queries, including vector, spatial, text, and relational operators. It connects system statistics and heterogeneous indexes with MySQL plan selection.</p>
+              <p class="role">As co-first author, I led the design and implementation of the query-optimisation component. I contributed to technical discussions across the broader system; other team members held primary ownership of storage, indexing, and continuous-query processing.</p>
+            </div>
+          </article>
+
+          <article class="detail-project">
+            <div class="detail-project-heading">
+              <p class="project-kicker">Continuous workloads</p>
+              <h2>Incremental query processing</h2>
+            </div>
+            <div class="detail-project-copy">
+              <p>ARCADE supports time-based and event-driven continuous queries through incremental materialised views. Intermediate results are reused as data changes, allowing the system to maintain fresh answers without repeatedly executing each query from scratch.</p>
+            </div>
+          </article>
+
+          <section class="detail-summary" aria-labelledby="arcade-evidence-title">
+            <h2 id="arcade-evidence-title">Public system and evidence</h2>
+            <p>The ICDE 2026 evaluation reports improvements of up to 7.4× in read-heavy settings and 1.4× in write-heavy settings over the best-performing evaluated baseline.</p>
+            <p class="resource-links"><a href="https://doi.org/10.1109/ICDE65706.2026.00255">IEEE ICDE paper</a><a href="https://arxiv.org/abs/2509.19757">arXiv</a><a href="https://github.com/Jamesyang2333/ARCADE">Code</a></p>
+          </section>
+
+          <p class="section-link"><a href="/research/">Back to the research overview <span aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner"><p>© 2026 Songsong Mo</p><p>Singapore</p></div>
+    </footer>
+  </body>
+</html>

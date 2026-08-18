@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI for Database Optimisation | Songsong Mo</title>
+    <meta name="description" content="Songsong Mo's research on learning-enhanced query optimisation, from PostgreSQL prototypes to industrial integration in OceanBase.">
+    <link rel="canonical" href="https://songsongmo.cn/research/ai-for-database-optimisation/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AI for Database Optimisation | Songsong Mo">
+    <meta property="og:description" content="Learning-enhanced query optimisation for concurrent, parametric, and transferable workloads.">
+    <meta property="og:url" content="https://songsongmo.cn/research/ai-for-database-optimisation/">
+    <meta property="og:image" content="https://songsongmo.cn/assets/images/og-home.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://songsongmo.cn/assets/images/og-home.png">
+    <meta name="theme-color" content="#f8f7f3">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png?v=20260818-db2">
+    <link rel="stylesheet" href="/assets/css/site.css?v=20260818-research1">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="site-name" href="/">Songsong Mo</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="/">Home</a>
+          <a href="/research/" aria-current="page">Research</a>
+          <a href="/publications/">Publications</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <div class="research-detail-layout shell">
+        <nav class="research-direction-nav" aria-label="Research directions">
+          <p class="direction-nav-label">Research</p>
+          <a href="/research/">Overview</a>
+          <a href="/research/#semantic-query-processing">Semantic Query Processing</a>
+          <a href="/research/multimodal-data-systems/">Heterogeneous and Multimodal Data Systems</a>
+          <a href="/research/ai-for-database-optimisation/" aria-current="page">AI for Database Optimisation</a>
+          <a href="/research/#algorithms-for-data-intensive-applications">Algorithms for Data-Intensive Applications</a>
+        </nav>
+
+        <div class="research-detail-main">
+          <header class="detail-hero">
+            <p class="project-kicker">Research direction</p>
+            <h1>AI for Database Optimisation</h1>
+            <p>I study how learning can improve query optimisation while retaining the plan space, correctness guarantees, and system interfaces of a database engine. The work has progressed from PostgreSQL prototypes to industrial-scale parametric optimisation in OceanBase.</p>
+          </header>
+
+          <article class="detail-project">
+            <div class="detail-project-heading">
+              <p class="project-kicker">Concurrent queries · ACM SIGMOD 2024</p>
+              <h2><em>lemo</em></h2>
+            </div>
+            <div class="detail-project-copy">
+              <p>Concurrent queries can repeat the same computation while competing for shared resources. <em>lemo</em> combines learned latency estimation with a shared buffer for intermediate subquery results, so cached results can be considered during plan generation. The system was implemented as a PostgreSQL prototype.</p>
+              <p class="role">I am the first author and implemented the PostgreSQL prototype.</p>
+              <p class="resource-links"><a href="https://doi.org/10.1145/3626734">Paper</a></p>
+            </div>
+          </article>
+
+          <article class="detail-project">
+            <div class="detail-project-heading">
+              <p class="project-kicker">Parametric plans · VLDB 2025</p>
+              <h2><em>RankPQO</em></h2>
+            </div>
+            <div class="detail-project-copy">
+              <p>Parameterized SQL templates may require different plans for different parameter bindings, while absolute latency is difficult to predict reliably. <em>RankPQO</em> combines plan enumeration with learning-to-rank for offline plan caching and online plan selection in PostgreSQL.</p>
+              <p class="role">I am the first author and led the design and implementation of the query-optimisation work.</p>
+              <p class="result">The paper reports up to 2.57× acceleration over the PostgreSQL optimiser and up to 1.36× over the strongest evaluated baseline.</p>
+              <p class="resource-links"><a href="https://doi.org/10.14778/3712221.3712248">Paper</a><a href="https://github.com/songsong945/RankPQO">Code</a></p>
+            </div>
+          </article>
+
+          <article class="detail-project">
+            <div class="detail-project-heading">
+              <p class="project-kicker">Task transfer · VLDB 2026</p>
+              <h2><em>TATA</em></h2>
+            </div>
+            <div class="detail-project-copy">
+              <p>Learned database components often require new labelled data for every task. <em>TATA</em> transfers query-plan representations across tasks by combining self-supervised plan reconstruction with database-aware generation of pseudo-labelled target data. It was evaluated when transferring from cost estimation to query optimisation and index selection.</p>
+              <p class="role">I am a contact author of this work.</p>
+              <p class="result">The paper reports up to a fivefold reduction in data-collection cost across the evaluated transfer settings.</p>
+              <p class="resource-links"><a href="https://doi.org/10.14778/3778092.3778102">Paper</a><a href="https://github.com/zhaoyue-ntu/tata">Code</a></p>
+            </div>
+          </article>
+
+          <article class="detail-project">
+            <div class="detail-project-heading">
+              <p class="project-kicker">Industrial system · VLDB 2026 Industry Track</p>
+              <h2><em>ScalePQO</em></h2>
+            </div>
+            <div class="detail-project-copy">
+              <p>Industrial parametric query optimisation must support many query templates and adapt when parameter distributions change. <em>ScalePQO</em> shares models across related templates and controls online model updates as workloads evolve. The system was implemented in OceanBase, an enterprise-grade distributed database originating from Ant Group.</p>
+              <p class="role">I am the first author and led the technical development of the query-optimisation strand in the NTU–OceanBase collaboration.</p>
+              <p class="result">Across six evaluated workloads, the paper reports up to 1.62× acceleration over OceanBase and up to 1.23× over <em>RankPQO</em>.</p>
+              <p class="resource-links"><a href="https://github.com/songsong945/RankPQO-industry/blob/main/ScalePQO_Technical_Report.pdf">Technical report</a><a href="https://github.com/songsong945/RankPQO-industry">Code</a></p>
+            </div>
+          </article>
+
+          <p class="section-link"><a href="/research/">Back to the research overview <span aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner"><p>© 2026 Songsong Mo</p><p>Singapore</p></div>
+    </footer>
+  </body>
+</html>

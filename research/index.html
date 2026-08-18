@@ -15,7 +15,7 @@
     <meta name="twitter:image" content="https://songsongmo.cn/assets/images/og-home.png">
     <meta name="theme-color" content="#f8f7f3">
     <link rel="icon" type="image/png" href="/assets/images/favicon.png?v=20260818-db2">
-    <link rel="stylesheet" href="/assets/css/site.css?v=20260818-academic3">
+    <link rel="stylesheet" href="/assets/css/site.css?v=20260818-research1">
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -51,32 +51,22 @@
         <section class="research-block" aria-labelledby="multimodal-data-systems">
           <div>
             <p class="project-kicker">System building · ICDE 2026</p>
-            <h2 id="multimodal-data-systems">Heterogeneous and Multimodal Data Systems</h2>
+            <h2 id="multimodal-data-systems"><a class="research-heading-link" href="/research/multimodal-data-systems/">Heterogeneous and Multimodal Data Systems</a></h2>
           </div>
           <div class="research-copy">
-            <p><strong>ARCADE</strong> is an open-source system for real-time hybrid and continuous query processing across vector, spatial, text, image, and relational data. Built on RocksDB and MySQL, it connects storage, indexing, optimisation, and incremental query processing in a working database system.</p>
-            <h3>My contribution</h3>
-            <p>I led the design and implementation of the query-optimisation component and its end-to-end integration. This included connecting system statistics, access paths, and heterogeneous operators in a cost-based optimiser, while working with collaborators responsible for storage, indexing, and continuous-query support.</p>
-            <p class="evidence"><strong>Evidence:</strong> IEEE ICDE 2026; open-source implementation. <span class="resource-links"><a href="https://doi.org/10.1109/ICDE65706.2026.00255">Paper</a><a href="https://github.com/Jamesyang2333/ARCADE">Code</a></span></p>
+            <p><strong>ARCADE</strong> is an open-source RocksDB/MySQL system for real-time hybrid and continuous queries over vector, spatial, text, image, and relational data. As co-first author, I led the design and implementation of its query-optimisation component; collaborators held primary ownership of storage, indexing, and continuous-query processing.</p>
+            <p class="evidence"><strong>Evidence:</strong> IEEE ICDE 2026; open-source implementation. <span class="resource-links"><a href="/research/multimodal-data-systems/">Project details</a><a href="https://doi.org/10.1109/ICDE65706.2026.00255">Paper</a><a href="https://github.com/Jamesyang2333/ARCADE">Code</a></span></p>
           </div>
         </section>
 
         <section class="research-block" aria-labelledby="ai-for-database-optimisation">
           <div>
             <p class="project-kicker">Research foundations · SIGMOD and PVLDB</p>
-            <h2 id="ai-for-database-optimisation">AI for Database Optimisation</h2>
+            <h2 id="ai-for-database-optimisation"><a class="research-heading-link" href="/research/ai-for-database-optimisation/">AI for Database Optimisation</a></h2>
           </div>
           <div class="research-copy">
-            <p>This programme studies three ways to use learning in query optimisation: replacing selected optimisation logic, enhancing an existing optimiser while preserving native database guarantees, and transferring reusable query-plan representations across tasks.</p>
-            <h3>Replacement</h3>
-            <p><em>lemo</em> studies learned optimisation for concurrent-query workloads, combining plan search with reuse of intermediate results. I led this work and implemented its PostgreSQL prototype.</p>
-            <h3>Enhancement</h3>
-            <p><em>RankPQO</em> combines plan enumeration with learning-to-rank for parameterised plan selection. The work was developed and evaluated in PostgreSQL.</p>
-            <h3>Transfer</h3>
-            <p><em>TATA</em> develops transferable query-plan representations so that knowledge learned for one database task can reduce data collection for another.</p>
-            <h3>Industry translation</h3>
-            <p>In an industry-funded NTU collaboration with OceanBase, an enterprise-grade distributed database originating from Ant Group, I led the day-to-day technical development of the parametric query-optimisation work. The resulting <em>ScalePQO</em> techniques were integrated into OceanBase and evaluated on industry workloads.</p>
-            <p class="evidence"><strong>Outputs:</strong> <em>lemo</em> (ACM SIGMOD 2024), <em>RankPQO</em> (PVLDB / VLDB 2025), <em>TATA</em> (PVLDB / VLDB 2026), and <em>ScalePQO</em> (PVLDB Industry Track 2026).</p>
+            <p>This work studies learned search for concurrent queries, learning-to-rank for parametric plan selection, transferable query-plan representations, and industrial-scale optimisation. It includes PostgreSQL prototypes for <em>lemo</em> and <em>RankPQO</em>, the <em>TATA</em> transfer framework, and <em>ScalePQO</em>, which was integrated into OceanBase.</p>
+            <p class="evidence"><strong>Outputs:</strong> ACM SIGMOD 2024 and PVLDB / VLDB 2025–2026. <span class="resource-links"><a href="/research/ai-for-database-optimisation/">Project details</a></span></p>
           </div>
         </section>
 
