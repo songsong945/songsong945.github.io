@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research | Songsong Mo</title>
+    <meta name="description" content="Songsong Mo's research in semantic query processing, multimodal data systems, and learning-enhanced query optimisation.">
+    <link rel="canonical" href="https://songsongmo.cn/research/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Research | Songsong Mo">
+    <meta property="og:description" content="Semantic query processing, multimodal data systems, and learning-enhanced query optimisation.">
+    <meta property="og:url" content="https://songsongmo.cn/research/">
+    <meta property="og:image" content="https://songsongmo.cn/assets/images/og-home.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://songsongmo.cn/assets/images/og-home.png">
+    <meta name="theme-color" content="#f8f7f3">
+    <link rel="icon" href="/assets/images/bio-photo.jpg">
+    <link rel="stylesheet" href="/assets/css/site.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="site-name" href="/">Songsong Mo</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="/">Home</a>
+          <a href="/research/" aria-current="page">Research</a>
+          <a href="/publications/">Publications</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <header class="page-hero shell">
+        <p class="eyebrow">Research</p>
+        <h1>From query optimisation to complete data systems</h1>
+        <p class="page-intro">My research asks where learned components can improve a database system, and which database guarantees the surrounding system must retain. The work spans algorithms, database internals, and end-to-end implementation.</p>
+      </header>
+
+      <div class="shell">
+        <section class="research-block" aria-labelledby="semantic-title">
+          <div>
+            <p class="project-kicker">Current direction</p>
+            <h2 id="semantic-title">Semantic Query Processing</h2>
+          </div>
+          <div class="research-copy">
+            <p>Semantic workloads place expensive model-backed operators in the same plans as conventional relational operators. I am studying how a database system should execute and optimise these mixed workloads while retaining control over latency, resource use, and result quality.</p>
+            <h3>Research questions</h3>
+            <ul>
+              <li>How should semantic operators interact with relational execution inside a database engine?</li>
+              <li>How should an optimiser compare plans when model calls are expensive and several objectives matter?</li>
+              <li>Which parts of execution and optimisation should remain explicit and controllable at the database layer?</li>
+            </ul>
+            <p class="evidence"><strong>Status:</strong> ongoing research. Project names, manuscript details, and experimental results will be added when they are public.</p>
+          </div>
+        </section>
+
+        <section class="research-block" aria-labelledby="arcade-title">
+          <div>
+            <p class="project-kicker">System building · ICDE 2026</p>
+            <h2 id="arcade-title">Real-Time Multimodal Data Systems</h2>
+          </div>
+          <div class="research-copy">
+            <p><strong>ARCADE</strong> is an open-source system for real-time hybrid and continuous query processing across vector, spatial, text, image, and relational data. Built on RocksDB and MySQL, it connects storage, indexing, optimisation, and incremental query processing in a working database system.</p>
+            <h3>My contribution</h3>
+            <p>I led the design and implementation of the query-optimisation component and its end-to-end integration. This included connecting system statistics, access paths, and heterogeneous operators in a cost-based optimiser, while working with collaborators responsible for storage, indexing, and continuous-query support.</p>
+            <p class="evidence"><strong>Evidence:</strong> IEEE ICDE 2026; open-source implementation. <span class="resource-links"><a href="https://doi.org/10.1109/ICDE65706.2026.00255">Paper</a><a href="https://github.com/Jamesyang2333/ARCADE">Code</a></span></p>
+          </div>
+        </section>
+
+        <section class="research-block" aria-labelledby="ai4db-title">
+          <div>
+            <p class="project-kicker">Research foundations · SIGMOD and PVLDB</p>
+            <h2 id="ai4db-title">AI for Database Optimisation</h2>
+          </div>
+          <div class="research-copy">
+            <p>This programme studies three ways to use learning in query optimisation: replacing selected optimisation logic, enhancing an existing optimiser while preserving native database guarantees, and transferring reusable query-plan representations across tasks.</p>
+            <h3>Replacement</h3>
+            <p><em>lemo</em> studies learned optimisation for concurrent-query workloads, combining plan search with reuse of intermediate results. I led this work and implemented its PostgreSQL prototype.</p>
+            <h3>Enhancement</h3>
+            <p><em>RankPQO</em> combines plan enumeration with learning-to-rank for parameterised plan selection. The work was developed and evaluated in PostgreSQL.</p>
+            <h3>Transfer</h3>
+            <p><em>TATA</em> develops transferable query-plan representations so that knowledge learned for one database task can reduce data collection for another.</p>
+            <h3>Industry translation</h3>
+            <p>In an industry-funded NTU collaboration with OceanBase, an enterprise-grade distributed database originating from Ant Group, I led the day-to-day technical development of the parametric query-optimisation work. The resulting <em>ScalePQO</em> techniques were integrated into OceanBase and evaluated on industry workloads.</p>
+            <p class="evidence"><strong>Outputs:</strong> <em>lemo</em> (ACM SIGMOD 2024), <em>RankPQO</em> (PVLDB / VLDB 2025), <em>TATA</em> (PVLDB / VLDB 2026), and <em>ScalePQO</em> (PVLDB Industry Track 2026).</p>
+          </div>
+        </section>
+
+        <section class="research-block" aria-labelledby="algorithms-title">
+          <div>
+            <p class="project-kicker">Earlier research</p>
+            <h2 id="algorithms-title">Algorithms for Data-Intensive Applications</h2>
+          </div>
+          <div class="research-copy">
+            <p>My earlier work developed algorithms for graph analytics and urban data applications. It includes weighted random-walk domination, public-transport scheduling, and outdoor-advertising placement over large trajectory and graph datasets.</p>
+            <p>These projects provided the algorithmic foundation for my later systems work: formal problem definition, approximation and pruning techniques, and empirical evaluation on real datasets.</p>
+            <p class="evidence"><strong>Selected outputs:</strong> PVLDB 2021, IEEE TKDE, and ACM KDD 2019 Best Paper Runner-up.</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="contact shell" aria-labelledby="research-contact-title">
+        <p class="eyebrow">Explore</p>
+        <h2 id="research-contact-title">The publication record behind the programme</h2>
+        <p><a href="/publications/">View all publications <span aria-hidden="true">→</span></a></p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner"><p>© 2026 Songsong Mo</p><p>Singapore</p></div>
+    </footer>
+  </body>
+</html>
