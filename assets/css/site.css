@@ -243,13 +243,11 @@ h3 {
 }
 
 .portrait {
+  display: block;
   width: 224px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center 28%;
+  height: auto;
   border: 1px solid var(--line);
   border-radius: 3px;
-  filter: saturate(0.88) contrast(1.02);
 }
 
 .section {
