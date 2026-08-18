@@ -604,12 +604,40 @@ h3 {
   font-weight: 700;
 }
 
+.research-progression-scroll {
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding-top: 0.4rem;
+}
+
 .research-progression ol {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
+  min-width: 720px;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.research-progression ol::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0.55rem;
+  left: 1.49rem;
+  height: 2px;
+  background: var(--accent);
+}
+
+.research-progression ol::after {
+  content: "";
+  position: absolute;
+  top: -0.28rem;
+  right: 0;
+  border-top: 0.33rem solid transparent;
+  border-bottom: 0.33rem solid transparent;
+  border-left: 0.56rem solid var(--accent);
 }
 
 .research-progression li {
@@ -628,16 +656,6 @@ h3 {
   height: 0.68rem;
   border: 2px solid var(--surface);
   border-radius: 50%;
-  background: var(--accent);
-}
-
-.research-progression li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 1.49rem;
-  width: 100%;
-  height: 2px;
   background: var(--accent);
 }
 
@@ -1055,31 +1073,6 @@ h3 {
   .news-item {
     grid-template-columns: 1fr;
     gap: 0.55rem;
-  }
-
-  .research-progression ol {
-    grid-template-columns: 1fr;
-    gap: 1.65rem;
-  }
-
-  .research-progression li {
-    padding: 0 0 0 1.4rem;
-  }
-
-  .research-progression li::before {
-    top: 0.22rem;
-    left: 0;
-  }
-
-  .research-progression li:not(:last-child)::after {
-    top: 0.56rem;
-    left: 0.33rem;
-    width: 2px;
-    height: calc(100% + 1.65rem);
-  }
-
-  .progression-stage {
-    min-height: 0;
   }
 
   .publication-year {
