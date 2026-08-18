@@ -616,13 +616,13 @@ h3 {
   position: relative;
   min-width: 0;
   padding: 1.15rem 1.15rem 0.25rem;
-  border-top: 2px solid var(--accent);
 }
 
 .research-progression li::before {
   content: "";
   position: absolute;
-  top: -0.39rem;
+  z-index: 1;
+  top: -0.34rem;
   left: 1.15rem;
   width: 0.68rem;
   height: 0.68rem;
@@ -632,16 +632,13 @@ h3 {
 }
 
 .research-progression li:not(:last-child)::after {
-  content: "→";
+  content: "";
   position: absolute;
-  z-index: 1;
-  top: -1.05rem;
-  right: -0.55rem;
-  padding-inline: 0.18rem;
-  background: var(--surface);
-  color: var(--accent);
-  font-size: 1rem;
-  font-weight: 700;
+  top: 0;
+  left: 1.49rem;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
 }
 
 .progression-stage {
@@ -972,15 +969,6 @@ h3 {
     gap: 1.35rem;
   }
 
-  .research-progression ol {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem 0;
-  }
-
-  .research-progression li:nth-child(2)::after {
-    content: none;
-  }
-
   .research-detail-layout {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1069,6 +1057,31 @@ h3 {
     gap: 0.55rem;
   }
 
+  .research-progression ol {
+    grid-template-columns: 1fr;
+    gap: 1.65rem;
+  }
+
+  .research-progression li {
+    padding: 0 0 0 1.4rem;
+  }
+
+  .research-progression li::before {
+    top: 0.22rem;
+    left: 0;
+  }
+
+  .research-progression li:not(:last-child)::after {
+    top: 0.56rem;
+    left: 0.33rem;
+    width: 2px;
+    height: calc(100% + 1.65rem);
+  }
+
+  .progression-stage {
+    min-height: 0;
+  }
+
   .publication-year {
     display: flex;
     gap: 0.55rem;
@@ -1095,27 +1108,6 @@ h3 {
 
   .site-nav a[aria-current="page"]::after {
     bottom: 0;
-  }
-
-  .research-progression ol {
-    grid-template-columns: 1fr;
-    gap: 1.65rem;
-  }
-
-  .research-progression li {
-    padding-inline: 1rem 0;
-  }
-
-  .research-progression li:not(:last-child)::after {
-    content: "↓";
-    top: auto;
-    right: auto;
-    bottom: -1.35rem;
-    left: 0.92rem;
-  }
-
-  .progression-stage {
-    min-height: 0;
   }
 
 }
