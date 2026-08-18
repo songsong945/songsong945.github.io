@@ -591,6 +591,82 @@ h3 {
   color: var(--muted);
 }
 
+.research-progression {
+  margin: 0 0 clamp(3rem, 6vw, 4.5rem);
+  padding: clamp(1.4rem, 3.5vw, 2rem);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.research-progression > h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.research-progression ol {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.research-progression li {
+  position: relative;
+  min-width: 0;
+  padding: 1.15rem 1.15rem 0.25rem;
+  border-top: 2px solid var(--accent);
+}
+
+.research-progression li::before {
+  content: "";
+  position: absolute;
+  top: -0.39rem;
+  left: 1.15rem;
+  width: 0.68rem;
+  height: 0.68rem;
+  border: 2px solid var(--surface);
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.research-progression li:not(:last-child)::after {
+  content: "→";
+  position: absolute;
+  z-index: 1;
+  top: -1.05rem;
+  right: -0.55rem;
+  padding-inline: 0.18rem;
+  background: var(--surface);
+  color: var(--accent);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.progression-stage {
+  min-height: 2.7em;
+  margin-bottom: 0.6rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.research-progression h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1.08rem;
+}
+
+.research-progression li > p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
 .detail-project {
   display: grid;
   grid-template-columns: minmax(190px, 0.8fr) minmax(0, 1.8fr);
@@ -896,6 +972,15 @@ h3 {
     gap: 1.35rem;
   }
 
+  .research-progression ol {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem 0;
+  }
+
+  .research-progression li:nth-child(2)::after {
+    content: none;
+  }
+
   .research-detail-layout {
     grid-template-columns: 1fr;
     gap: 2.5rem;
@@ -1010,6 +1095,27 @@ h3 {
 
   .site-nav a[aria-current="page"]::after {
     bottom: 0;
+  }
+
+  .research-progression ol {
+    grid-template-columns: 1fr;
+    gap: 1.65rem;
+  }
+
+  .research-progression li {
+    padding-inline: 1rem 0;
+  }
+
+  .research-progression li:not(:last-child)::after {
+    content: "↓";
+    top: auto;
+    right: auto;
+    bottom: -1.35rem;
+    left: 0.92rem;
+  }
+
+  .progression-stage {
+    min-height: 0;
   }
 
 }
