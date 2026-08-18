@@ -279,28 +279,6 @@ h3 {
   margin-bottom: clamp(2rem, 4vw, 3rem);
 }
 
-.focus-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid var(--line);
-}
-
-.focus-item {
-  min-width: 0;
-  padding: 1.8rem 1.6rem 0 0;
-}
-
-.focus-item + .focus-item {
-  padding-left: 1.6rem;
-  border-left: 1px solid var(--line);
-}
-
-.focus-item p:last-child {
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 0.9em;
-}
-
 .section-link {
   margin: 2.2rem 0 0;
   text-align: right;
@@ -579,17 +557,6 @@ h3 {
 
   .portrait {
     width: 190px;
-  }
-
-  .focus-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .focus-item,
-  .focus-item + .focus-item {
-    padding: 1.55rem 0;
-    border-left: 0;
-    border-bottom: 1px solid var(--line);
   }
 
   .project-row,
